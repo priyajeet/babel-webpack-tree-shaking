@@ -5,7 +5,7 @@ let path = require('path');
 
 module.exports = {
   entry: {
-    'car.prod': './app/car.js'
+    'car.prod': './index.js'
   },
 
   output: {

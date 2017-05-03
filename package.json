@@ -28,6 +28,7 @@
   "devDependencies": {
     "babel-core": "~6.24.1",
     "babel-loader": "~7.0.0",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-env": "~1.4.0",
     "babili": "~0.0.12",
     "babili-webpack-plugin": "~0.0.11",

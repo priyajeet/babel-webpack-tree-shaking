@@ -1,6 +1,6 @@
-import { V8Engine } from './engine';
+import { V8Engine } from './';
 
-class SportsCar {
+export class SportsCar {
   constructor(engine) {
     this.engine = engine;
   }
@@ -9,5 +9,3 @@ class SportsCar {
     return this.engine.toString() + ' Sports Car';
   }
 }
-
-console.log(new SportsCar(new V8Engine()).toString());

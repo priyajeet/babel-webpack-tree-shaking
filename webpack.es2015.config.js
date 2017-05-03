@@ -4,7 +4,7 @@ let path = require('path');
 
 module.exports = {
   entry: {
-    'car.es2015': './app/car.js'
+    'car.es2015': './index.js'
   },
 
   output: {
@@ -13,7 +13,9 @@ module.exports = {
   },
 
   module: {
-    rules: []
+    rules: [
+      { test: /\.js$/, loader: 'babel-loader' }
+    ]
   },
 
   plugins: [],

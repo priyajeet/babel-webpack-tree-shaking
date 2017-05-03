@@ -1,4 +1,7 @@
 {
+  "plugins": [
+    "transform-export-extensions"
+  ],
   "presets": [
     ["env", {
       "loose": true,
