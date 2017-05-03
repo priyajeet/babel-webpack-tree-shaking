@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,8 +71,49 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__car__ = __webpack_require__(1);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__car__["default"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__engine__ = __webpack_require__(2);
+/* unused harmony reexport V6Engine */
+/* unused harmony reexport V8Engine */
+/* unused harmony reexport getVersion */
+
+
+
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0____ = __webpack_require__(0);
+/* unused harmony export SportsCar */
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+var SportsCar = function () {
+  function SportsCar(engine) {
+    _classCallCheck(this, SportsCar);
+
+    this.engine = engine;
+  }
+
+  SportsCar.prototype.toString = function toString() {
+    return this.engine.toString() + ' Sports Car';
+  };
+
+  return SportsCar;
+}();
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* unused harmony export V6Engine */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return V8Engine; });
+/* unused harmony export V8Engine */
 /* unused harmony export getVersion */
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -105,31 +146,14 @@ function getVersion() {
 }
 
 /***/ }),
-/* 1 */
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__engine__ = __webpack_require__(0);
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app__ = __webpack_require__(0);
 
-
-
-var SportsCar = function () {
-  function SportsCar(engine) {
-    _classCallCheck(this, SportsCar);
-
-    this.engine = engine;
-  }
-
-  SportsCar.prototype.toString = function toString() {
-    return this.engine.toString() + ' Sports Car';
-  };
-
-  return SportsCar;
-}();
-
-console.log(new SportsCar(new __WEBPACK_IMPORTED_MODULE_0__engine__["a" /* V8Engine */]()).toString());
+console.log(new __WEBPACK_IMPORTED_MODULE_0__app__["a" /* SportsCar */](new V8Engine()).toString());
 
 /***/ })
 /******/ ]);
