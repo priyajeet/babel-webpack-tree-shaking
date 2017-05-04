@@ -1,8 +1,17 @@
 {
   "presets": [
-    ["env", {
-      "loose": true,
-      "modules": false
-    }]
+    [
+      "es2015",
+      {
+        "loose": true,
+        "modules": false
+      }
+    ],
+    "react"
+  ],
+  "plugins": [
+    "transform-export-extensions",
+    "transform-class-properties",
+    "./pure-plugin.js"
   ]
 }

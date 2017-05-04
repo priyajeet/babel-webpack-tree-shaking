@@ -93,7 +93,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 
-var SportsCar = function () {
+var SportsCar = /*#__PURE__*/function () {
   function SportsCar(engine) {
     _classCallCheck(this, SportsCar);
 
@@ -117,7 +117,7 @@ var SportsCar = function () {
 /* unused harmony export getVersion */
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var V6Engine = function () {
+var V6Engine = /*#__PURE__*/function () {
   function V6Engine() {
     _classCallCheck(this, V6Engine);
   }
@@ -129,7 +129,7 @@ var V6Engine = function () {
   return V6Engine;
 }();
 
-var V8Engine = function () {
+var V8Engine = /*#__PURE__*/function () {
   function V8Engine() {
     _classCallCheck(this, V8Engine);
   }

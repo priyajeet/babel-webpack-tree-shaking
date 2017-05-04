@@ -1,4 +1,4 @@
-import { V8Engine } from './';
+import { V8Engine } from './engine';
 
 export class SportsCar {
   constructor(engine) {

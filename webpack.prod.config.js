@@ -19,21 +19,7 @@ module.exports = {
     ]
   },
 
-  plugins: [
-    new webpack.LoaderOptionsPlugin({
-      minimize: true,
-      debug: false
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: true
-      },
-      output: {
-        comments: false
-      },
-      sourceMap: false
-    })
-  ],
+  plugins: [],
 
   resolve: {
     modules: [

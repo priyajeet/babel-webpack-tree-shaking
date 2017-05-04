@@ -5,7 +5,7 @@
   "main": "dist/car.es2015.prod.bundle.js",
   "scripts": {
     "webpack": "webpack --config webpack.config.js",
-    "webpack-prod": "webpack --config webpack.prod.config.js",
+    "webpack-prod": "webpack -p --config webpack.prod.config.js",
     "webpack-es2015": "webpack --config webpack.es2015.config.js",
     "webpack-es2015-prod": "webpack --config webpack.es2015.prod.config.js",
     "serve": "http-server -a 0.0.0.0 -p 9000"
